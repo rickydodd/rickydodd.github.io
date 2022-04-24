@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/a-second-post/",
-    "result": {"data":{"markdownRemark":{"html":"<p>This is the second blog post submitted. Again, subject to removal and intended for testing only.</p>","frontmatter":{"title":"A Second Post","date":"2022-04-26T00:00:00.000Z"}}},"pageContext":{"slug":"/a-second-post/"}},
+    "result": {"data":{"markdownRemark":{"html":"<p>This is the second blog post submitted. Again, subject to removal and intended for testing only.</p>","frontmatter":{"title":"A Second Post","author":"Ricky Dodd","date":"2022-04-26T00:00:00.000Z"}}},"pageContext":{"slug":"/a-second-post/"}},
     "staticQueryHashes": []}
