@@ -5,6 +5,43 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  /* Site metadata */
+  siteMetadata: {
+    title: "Ricky Dodd's Personal Blog",
+    description: "A personal blog developed for and by Ricky Dodd."
+  },
+
+  /* Site config */
+  plugins: [
+    // gatsby-source-filesystem config
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`
+      }
+    },
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+        gfm: true,
+      }
+    },
+  ],
 }
