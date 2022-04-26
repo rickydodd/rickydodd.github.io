@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Ricky Dodd (sometimes) Thinks","siteUrl":"https://rickydodd.github.io","description":"A simple, minimalistic blog created by and for Ricky Dodd to discuss computer science, mathematics, philosophy, or any other subject pertaining to Ricky Dodd's interests."}},"blog":{"posts":[{"fields":{"slug":"/a-second-post/"},"frontmatter":{"date":"2022-04-25 05:00","title":"A Second Post","author":"Ricky Dodd"},"excerpt":"This is the second blog post submitted. Again, subject to removal and intended for testing only.","id":"b3683434-5b86-57fb-b4cf-d5e0c5681e13"},{"fields":{"slug":"/a-first-post/"},"frontmatter":{"date":"2022-04-25 02:06","title":"A First Post","author":"Ricky Dodd"},"excerpt":"This is the first blog post submitted. This post is subject to removal after some testing.","id":"3fc629ca-953b-5e7b-8376-e7d4511f889d"}]}},"pageContext":{}},
+    "result": {"data":{"blog":{"posts":[{"fields":{"slug":"/recursion/"},"frontmatter":{"date":"a day ago","title":"Recursion, Recursion, ...","author":"Ricky Dodd"},"excerpt":"This is the first blog post submitted. This post is subject to removal after some testing.","id":"32c50a17-0b11-5812-b7f5-a6223cbb7733"}]}},"pageContext":{}},
     "staticQueryHashes": []}
