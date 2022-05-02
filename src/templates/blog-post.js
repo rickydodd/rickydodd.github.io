@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import moment from 'moment'
+import "katex/dist/katex.min.css"
 
 export default function BlogPost({ data }) {
     const post = data.markdownRemark

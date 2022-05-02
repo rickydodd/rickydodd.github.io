@@ -41,6 +41,14 @@ module.exports = {
       options: {
         footnotes: true,
         gfm: true,
+        plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`
+            }
+          }
+        ]
       }
     },
   ],
