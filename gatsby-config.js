@@ -8,7 +8,7 @@ module.exports = {
   /* Site metadata */
   siteMetadata: {
     title: "Ricky Dodd's Personal Blog",
-    siteURL: "https://rickydodd.github.io/",
+    siteUrl: "https://rickydodd.github.io/",
     description: "A personal blog developed for and by Ricky Dodd."
   },
 
@@ -52,5 +52,55 @@ module.exports = {
         ]
       }
     },
+
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            title: "Ricky Dodd's Personal Blog",
+            output: "rss.xml",
+            query: `
+              {
+                allMarkdownRemark(sort: {fields: frontmatter___date, order: ASC}) {
+                  nodes {
+                    frontmatter {
+                      title
+                      author
+                      date
+                      description
+                    }
+                    fields {
+                      slug
+                    }
+                    html
+                  }
+                }
+              }
+            `,
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  url: `${ site.siteMetadata.siteUrl }${ node.fields.slug }`,
+                  guid: `${ site.siteMetadata.siteUrl }${ node.fields.slug }`
+                })
+              })
+            }
+          }
+        ]
+      }
+    }
   ],
 }
