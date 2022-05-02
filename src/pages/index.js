@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Footer from "../components/Footer"
 
 export default function Home({ data }) {
   const { posts } = data.blog
@@ -22,6 +23,8 @@ export default function Home({ data }) {
           <p>{ post.excerpt }</p>
         </article>
       ))}
+      
+      <Footer />
     </div>
   )
 }
