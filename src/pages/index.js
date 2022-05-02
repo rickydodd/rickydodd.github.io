@@ -15,6 +15,7 @@ export default function Home({ data }) {
           <Link to={ post.fields.slug }>
             <h2>{ post.frontmatter.title }</h2>
           </Link>
+          <p>{ post.frontmatter.description }</p>
           <small>
             { post.frontmatter.author }, { post.frontmatter.date }
           </small>
@@ -36,6 +37,7 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
           author
+          description
         }
         excerpt
         id
