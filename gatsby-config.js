@@ -8,6 +8,7 @@ module.exports = {
   /* Site metadata */
   siteMetadata: {
     title: "Ricky Dodd's Personal Blog",
+    siteURL: "https://rickydodd.github.io/",
     description: "A personal blog developed for and by Ricky Dodd."
   },
 
