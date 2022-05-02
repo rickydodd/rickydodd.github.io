@@ -7,8 +7,8 @@ export default function Home({ data }) {
 
   return (
     <div>
-      <h1>Ricky Dodd (sometimes) Thinks</h1>
-      <p>A minimalistic blog to catalogue the thoughts and beliefs of Ricky Dodd (<a href="https://github.com/rickydodd">GitHub profile</a>). Any thoughts or beliefs posted on this blog are the thoughts or beliefs of Ricky Dodd, and these thoughts or beliefs do not represent the thoughts or beliefs of any other person (or entity), whether they associate with Ricky Dodd in a professional or private context, unless otherwise stated by this person (or entity).</p>
+      <h1>Ricky (sometimes) Thinks</h1>
+      <p>A minimalistic blog to catalogue the thoughts and beliefs of Ricky Dodd (<a href="https://github.com/rickydodd">GitHub profile</a>),</p>
       <h2>Posts</h2>
       
       { posts.map(post => (
@@ -23,7 +23,7 @@ export default function Home({ data }) {
           <p>{ post.excerpt }</p>
         </article>
       ))}
-      
+
       <Footer />
     </div>
   )
