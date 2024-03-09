@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/recursion/",
-    "result": {"data":{"markdownRemark":{"html":"<p>This is the first blog post submitted. This post is subject to removal after some testing. <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>e</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">Test</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathnormal\">es</span><span class=\"mord mathnormal\">t</span></span></span></span></span></p>","frontmatter":{"title":"Recursion, Recursion, ...","author":"Ricky Dodd","date":"2022-04-25 02:06"}}},"pageContext":{"slug":"/recursion/"}},
-    "staticQueryHashes": []}

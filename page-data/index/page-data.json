@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-index-js",
-    "path": "/",
-    "result": {"data":{"blog":{"posts":[{"fields":{"slug":"/recursion/"},"frontmatter":{"date":"8 days ago","title":"Recursion, Recursion, ...","author":"Ricky Dodd","description":"Things just got recursive."},"excerpt":"This is the first blog post submitted. This post is subject to removal after some testing.","id":"32c50a17-0b11-5812-b7f5-a6223cbb7733"}]}},"pageContext":{}},
-    "staticQueryHashes": []}
