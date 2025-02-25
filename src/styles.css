@@ -82,14 +82,20 @@ body {
 }
 
 .hero {
+  background-color: var(--primary);
+  color: white;
+}
+
+.hero .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary);
-  color: white;
-  padding: 1em 0.5em;
+  max-width: var(--column-width);
+  margin-inline: auto;
   min-block-size: 100vh;
+  min-block-size: 100svh;
   margin-block-end: 2em;
+  padding: 1em 0.5em;
 }
 
 .hero h1 {
@@ -107,8 +113,8 @@ body {
 
 .hero img {
   display: block;
-  border: 1px solid white;
-  border-radius: 1rem;
+  border: 3px solid white;
+  border-radius: 50%;
   margin-block: 1rem;
 }
 
@@ -126,7 +132,7 @@ body {
   color: var(--primary);
 }
 
-.wrapper {
+body > .wrapper {
   padding-inline: 1em;
 }
 
@@ -172,7 +178,7 @@ ul li {
 }
 
 @media screen and (min-width: 900px) {
-  .hero {
+  .hero .wrapper {
     padding: 2em 3em;
   }
 
